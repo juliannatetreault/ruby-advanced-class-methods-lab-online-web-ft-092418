@@ -46,6 +46,7 @@ class Song
   def self.new_from_filename(file)
     artist, song = file.split(" - ")
     song.gsub!(".mp3", "")
+    
     #song = Song.new_from_filename("Thundercat - For Love I Come.mp3")
   end
   
