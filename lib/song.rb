@@ -50,7 +50,7 @@ class Song
     #song = Song.new_from_filename("Thundercat - For Love I Come.mp3")
   end
   
-  def self.create_by_filename(file)
+  def self.create_from_filename(file)
     song = self.new_from_filename(file).tap{ |song| song.save }
   end
   
