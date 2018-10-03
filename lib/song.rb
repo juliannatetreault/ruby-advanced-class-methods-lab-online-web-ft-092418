@@ -24,7 +24,7 @@ class Song
   end
   
   def self.create_by_name
-    
+    self.new.tap{ |song| song.name.save }
   end
   
   def self.find_by_name(name)
