@@ -44,7 +44,7 @@ class Song
   end
   
   def self.new_from_filename
-    @@new_from_filename
+    
   end
   
   def self.create_by_filename
