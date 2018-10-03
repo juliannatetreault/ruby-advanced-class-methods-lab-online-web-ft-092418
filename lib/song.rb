@@ -19,7 +19,7 @@ class Song
    # self.new.tap{ |song| song.save }
     song = self.new
     song.save
-    song
+    return song
   end
   
   def self.new_by_name
