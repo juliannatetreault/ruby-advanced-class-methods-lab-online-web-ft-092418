@@ -44,9 +44,9 @@ class Song
   end
   
   def self.new_from_filename(file)
-    artist, song = file.split(" - ")
+    artist_name, song = file.split(" - ")
     song.gsub!(".mp3", "")
-    self.new_by_name(song).tap { |song| song.artist = artist_name }
+    self.new_by_name(song).tap { |song| song.artist_name = artist_name }
     #song = Song.new_from_filename("Thundercat - For Love I Come.mp3")
   end
   
