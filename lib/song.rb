@@ -51,7 +51,7 @@ class Song
   end
   
   def self.create_by_filename(file)
-    self.new_from_filename(file).tap{ |song| song = song.save }
+    song = self.new_from_filename(file).tap{ |song| song.save }
   end
   
   def self.destroy_all
